@@ -1,0 +1,271 @@
+@font-face {
+  font-family: 'Avenir-Light';
+  src: url(../fonts/AvenirLight.woff), url(../fonts/AvenirLight.woff2);
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Avenir-Regular';
+  src: url(../fonts/AvenirNextLTProRegular.woff),
+    url(../fonts/AvenirNextLTProRegular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: url(../fonts/AvenirMedium.woff), url(../fonts/AvenirMedium.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Avenir-Black';
+  src: url(../fonts/Avenir-Black.woff), url(../fonts/Avenir-Black.woff2);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Juniper and Sage';
+  src: url('../fonts/JuniperandSage-Regular.woff2') format('woff2'),
+    url('../fonts/JuniperandSage-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 16px;
+  color: $p-color;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+img {
+  vertical-align: middle;
+  width: 100%;
+}
+textarea,
+select,
+input {
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+
+// Common
+.container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-white {
+  color: #fff;
+}
+.handwrite-font {
+  font-family: 'Juniper and Sage';
+  font-weight: 400;
+}
+h3.handwrite-font {
+  font-size: 54px;
+  @include md-max {
+    font-size: 40px;
+    line-height: 1.3;
+  }
+}
+.red-button {
+  border: none;
+  text-transform: uppercase;
+  background-color: $red;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 900;
+  padding: 20px 38px;
+  letter-spacing: 2px;
+  font-size: 12px;
+  cursor: pointer;
+  @include xs-max {
+    padding: 14px 25px;
+    font-size: 11px;
+  }
+  &.circle {
+    display: inline-grid;
+    text-align: center;
+    height: 120px;
+    border-radius: 50%;
+    padding: 0 0;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+  }
+}
+form.join-the-journey {
+  text-align: center;
+
+  > div {
+    display: inline-block;
+  }
+  input {
+    font-family: 'Avenir-Medium';
+    font-size: 15px;
+    &::placeholder {
+      color: #b0b0b0;
+    }
+    border: none;
+    padding: 20px 15px;
+    width: 370px;
+    margin-right: 10px;
+    @include rwd-max(1090) {
+      display: block;
+      margin-bottom: 15px;
+      margin-right: 0;
+    }
+    @include sm-max {
+      padding: 15px 15px;
+      width: 290px;
+    }
+  }
+  .red-button {
+    padding: 20px 30px;
+    letter-spacing: 1px;
+    font-size: 11px;
+    cursor: pointer;
+    font-family: 'Avenir-Medium';
+    @include sm-max {
+      padding: 15px 21px;
+      font-size: 8.5px;
+    }
+  }
+}
+div.social-icons {
+  a {
+    width: 32px;
+    line-height: 32px;
+    height: 32px;
+    background-color: #ee8879;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 7.5px;
+    border: 1px solid transparent;
+    transition-duration: 0.45s;
+    padding-left: 1px;
+
+    @include tab-max {
+      &:first-child {
+        margin-left: 0px;
+      }
+    }
+    &:hover {
+      color: $red;
+      background-color: transparent;
+      border-color: $red;
+    }
+  }
+}
+p.blue-text {
+  font-size: 24px;
+  color: #7da5c1;
+}
+.circle-newsletter {
+  background-color: $red;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  @include rwd-max(400.98) {
+    width: 300px;
+    height: 300px;
+  }
+  @include rwd-max(330.98) {
+    width: 290px;
+    height: 290px;
+  }
+  form {
+    margin-top: -12.5px;
+    h4 {
+      font-size: 40px;
+      line-height: 1;
+      @include rwd-max(400.98) {
+        font-size: 32px;
+      }
+    }
+    input {
+      width: 280px;
+      border: none;
+      height: 55px;
+      font-size: 16px;
+      text-align: center;
+      margin: 15px 0;
+      margin-top: 25px;
+      @include rwd-max(400.98) {
+        width: 245px;
+        height: 48px;
+        font-size: 15px;
+      }
+    }
+    button {
+      background-color: #fff;
+      color: $red;
+      font-size: 11px;
+      letter-spacing: 0px;
+      padding: 20px 30px;
+      border: 1px solid transparent;
+      @include rwd-max(400.98) {
+        font-size: 10px;
+        letter-spacing: 0.3px;
+        padding: 15px 20px;
+      }
+
+      &:hover {
+        border-color: #fff;
+        background-color: transparent;
+        color: #fff;
+      }
+    }
+  }
+}
+.post-title {
+  font-size: 36px;
+  @include mobile-max {
+    font-size: 30px;
+  }
+}
+div.date {
+  font-size: 13px;
+  margin-bottom: 10px;
+  span {
+    color: $red;
+    text-transform: uppercase;
+  }
+}
+a.load-more-btn {
+  text-transform: uppercase;
+  color: $red;
+  font-size: 12px;
+  font-weight: 900;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}

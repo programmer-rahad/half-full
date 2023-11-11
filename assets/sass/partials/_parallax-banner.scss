@@ -1,0 +1,45 @@
+#parallax-banner {
+    background-image: url(../images/parallax-bg.jpg);
+    background-size: cover;
+    .container {
+      min-height: 1000px;
+      transform: translateY(200px);
+      @include tab-max {
+        transform: none;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    h3 {
+      color: #fff;
+      font-size: 50px;
+      font-weight: 700;
+      @include mobile-max {
+        font-size: 40px;
+      }
+    }
+    p:first-of-type {
+      font-size: 28px;
+      margin: 35px 0;
+      @include mobile-max {
+        font-size: 22px;
+      }
+    }
+    p:last-child {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      font-size: 13px;
+      span {
+        width: 5px;
+        height: 5px;
+        background-color: #fff;
+        display: inline-block;
+        border-radius: 50%;
+        margin: 0px 5px;
+        transform: translateY(-2px);
+      }
+    }
+  }

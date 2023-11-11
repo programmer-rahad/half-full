@@ -1,0 +1,169 @@
+/* Reset */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@font-face {
+  font-family: "KAGE-Freebies Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../webfonts/KageFreebiesBlack.woff") format("woff");
+}
+html {
+  font-size: $primary-font-size;
+}
+body {
+  font-size: 1rem;
+  font-family: $primary-font;
+  line-height: 25px;
+  background-color: #fafafa;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $title-font;
+  margin-bottom: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+}
+img {
+  // vertical-align: middle;
+  max-width: 100%;
+  width: 100%;
+}
+
+// For Bootstrap
+p {
+  margin-bottom: 0;
+}
+.container {
+  max-width: 1400px;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.ct-wrap {
+  position: relative;
+  width: 400px;
+  border-radius: 50%;
+  transform: rotate(-50deg);
+  .curved-text {
+    span {
+      font: 26px Monaco, MonoSpace;
+      height: 200px;
+      position: absolute;
+      width: 20px;
+      left: 0;
+      top: 0;
+      transform-origin: bottom center;
+      &.char1 {
+        transform: rotate(7deg);
+      }
+      &.char2 {
+        transform: rotate(14deg);
+      }
+      &.char3 {
+        transform: rotate(21deg);
+      }
+      &.char4 {
+        transform: rotate(28deg);
+      }
+      &.char5 {
+        transform: rotate(35deg);
+      }
+      &.char6 {
+        transform: rotate(42deg);
+      }
+      &.char7 {
+        transform: rotate(49deg);
+      }
+      &.char8 {
+        transform: rotate(56deg);
+      }
+      &.char9 {
+        transform: rotate(63deg);
+      }
+      &.char10 {
+        transform: rotate(70deg);
+      }
+      &.char11 {
+        transform: rotate(77deg);
+      }
+      &.char12 {
+        transform: rotate(84deg);
+      }
+      &.char13 {
+        transform: rotate(91deg);
+      }
+      &.char14 {
+        transform: rotate(98deg);
+      }
+      &.char15 {
+        transform: rotate(105deg);
+      }
+      &.char16 {
+        transform: rotate(112deg);
+      }
+      &.char17 {
+        transform: rotate(119deg);
+      }
+      &.char18 {
+        transform: rotate(126deg);
+      }
+    }
+  }
+}
+
+.common-btn {
+  color: $deep-pink;
+  border: 2px solid $deep-pink;
+  padding: 9px 22px;
+  font-weight: 900;
+  font-size: 14px;
+  word-spacing: 3px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  &:hover {
+    color: #fff;
+    background-color: $deep-pink;
+  }
+  @include md-max {
+    font-size: 13px;
+    font-size: 13px;
+    border-width: 1px;
+  }
+  @include tab-max {
+    font-size: 11px;
+  }
+}
+.social-icon-links {
+  &:hover {
+    a {
+      background-color: $theme-primary;
+    }
+  }
+  > a {
+    width: 35px;
+    height: 35px;
+    background-color: $theme-primary;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+    background-color: $deep-pink;
+    margin: 0 2.5px;
+    &:hover {
+      background-color: $deep-pink;
+    }
+  }
+}

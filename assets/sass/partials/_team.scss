@@ -1,0 +1,25 @@
+#team-section {
+  .container {
+    .team-members {
+      overflow: hidden;
+      .team-member {
+        text-align: center;
+        float: left;
+        width: calc(100% / 3);
+        img {
+        }
+        @include tab-max {
+          width: 50%;
+          &:last-child {
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+        @include mobile-max {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+header {
+  background-color: #fff;
+  .container .navbar {
+    @include lg-min {
+      min-height: 235px;
+    }
+    @include md-max {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+  a.navbar-brand {
+    img {
+      max-width: 280px;
+      @include lg-max {
+        max-width: 220px;
+      }
+      @include tab-max {
+        max-width: 180px;
+      }
+      @include mobile-max {
+        max-width: 140px;
+      }
+      @include sm-max {
+        max-width: 120px;
+      }
+    }
+  }
+  .navbar-toggler {
+    border: none;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  ul.navbar-nav {
+    li.nav-item {
+      @include lg-min {
+        margin-left: 25px;
+      }
+      @include md-max {
+        margin-left: 5px;
+      }
+      a.nav-link {
+        font-family: "KAGE-Freebies Black";
+        font-size: 25px;
+        letter-spacing: 1px;
+        color: #000;
+        &:hover {
+          color: $theme-primary;
+          transition: none;
+        }
+      }
+    }
+  }
+  .social-icon-links {
+    @include lg-min {
+      margin-left: 50px;
+    }
+  }
+}

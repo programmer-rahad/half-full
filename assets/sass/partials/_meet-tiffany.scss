@@ -1,0 +1,48 @@
+#meet-tiffany {
+    padding: 120px 0;
+    @include tab-max {
+      padding: 80px 0;
+    }
+    .left {
+      h2 {
+        font-size: 70px;
+        color: $theme-primary;
+        @include tab-max {
+          font-size: 50px;
+        }
+        @include xs-max {
+          font-size: 47px;
+        }
+      }
+      ul {
+        @include md-max {
+          margin-bottom: 40px;
+        }
+        li {
+          font-size: 18px;
+          font-weight: 900;
+          color: #a8a8a8;
+          letter-spacing: 1.5px;
+          margin: 15px 0;
+          @include tab-max {
+            font-size: 15px;
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+    .right {
+      color: $primary-color;
+      p {
+        margin-bottom: 30px;
+      }
+      p.quote {
+        font-weight: 900;
+        line-height: 1.2;
+        margin-bottom: 15px;
+      }
+      a:last-child {
+        margin-top: 25px;
+      }
+    }
+  }

@@ -1,0 +1,46 @@
+footer {
+  background-color: #fff;
+  padding: 100px 0;
+  @include tab-max {
+    padding: 70px 0;
+  }
+  .social-icon-links {
+    a {
+      background-color: #222222;
+      &:hover {
+        background-color: #222222 !important;
+      }
+    }
+    &:hover {
+      a {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
+  nav.footer-menu {
+    margin: 40px 0;
+    ul {
+      li {
+        a {
+          color: rgba(112, 112, 112, 0.5);
+          font-size: 14px;
+          padding: 10px 20px;
+          letter-spacing: 2px;
+          &:hover {
+            color: $theme-primary;
+          }
+        }
+      }
+    }
+  }
+  .footer-logo {
+    a {
+      img {
+        max-width: 280px;
+        @include tab-max {
+          max-width: 200px;
+        }
+      }
+    }
+  }
+}
